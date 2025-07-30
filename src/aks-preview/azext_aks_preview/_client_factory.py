@@ -55,6 +55,10 @@ def cf_nodepool_snapshots(cli_ctx, *_):
     return get_container_service_client(cli_ctx).snapshots
 
 
+def cf_identity_bindings(cli_ctx, *_):
+    return get_container_service_client(cli_ctx).identity_bindings
+
+
 def get_nodepool_snapshots_client(cli_ctx, subscription_id=None):
     return get_container_service_client(cli_ctx, subscription_id=subscription_id).snapshots
 
